@@ -106,6 +106,7 @@ struct setGpu: Encodable {
         case RX5600XT = "Vendor1002Device731F"
         case RX5500XT = "Vendor1002Device7340"
         case RX5700XT = "Vendor1002Device731f"
+        case RX6600XT = "Vendor1002Device73ff"
         case RX6800XT = "Vendor1002Device73bf"
         case RX6900XT = "Vendor1002Device73af"
         case RadeonVII = "Vendor1002Device66af"
