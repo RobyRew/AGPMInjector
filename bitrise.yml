@@ -81,6 +81,6 @@ workflows:
         - files_to_upload: |-
             $BITRISE_EXPORTED_FILE_PATH
             $BITRISE_DEPLOY_DIR/appcast.xml
-        - repository_url: https://github.com/Pavo-IM/AGPMInjector.git
+        - repository_url: https://github.com/junzhli/AGPMInjector.git
         - commit: master
         - api_token: $GIT_ACCESS_TOKEN
