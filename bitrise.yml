@@ -62,16 +62,16 @@ workflows:
 #         - force_team_id: $BITRISE_EXPORT_FORCE_TEAM_ID
         - force_code_sign_identity: ""
 #         - custom_export_options_plist_content:  "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>method</key>\n\t<string>development</string>\n\t<key>teamID</key>\n\t<string>XYZ123456</string>\n</dict>\n</plist>"
-    - script:
-        inputs:
-        - content: |+
-            #!/bin/bash
+#     - script:
+#         inputs:
+#         - content: |+
+#             #!/bin/bash
 
-            # ---- Remove DsYM file:
-            rm -rf $BITRISE_DSYM_PATH
+#             # ---- Remove DsYM file:
+#             rm -rf $BITRISE_DSYM_PATH
 
-            # ---- Generate Sparkle appacast.xml:
-            $BITRISE_SOURCE_DIR/Support\ Files/generate_appcast $BITRISE_DEPLOY_DIR
+#             # ---- Generate Sparkle appacast.xml:
+#             $BITRISE_SOURCE_DIR/Support\ Files/generate_appcast $BITRISE_DEPLOY_DIR
 
     - deploy-to-bitrise-io: {}
     - cache-push: {}
@@ -86,7 +86,7 @@ workflows:
         - body: $BITRISE_CHANGELOG
         - files_to_upload: |-
             $BITRISE_EXPORTED_FILE_PATH
-            $BITRISE_DEPLOY_DIR/appcast.xml
+#             $BITRISE_DEPLOY_DIR/appcast.xml
         - repository_url: https://github.com/junzhli/AGPMInjector.git
         - commit: master
         - api_token: $GIT_ACCESS_TOKEN
