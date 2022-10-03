@@ -9,7 +9,7 @@ app:
   - BITRISE_SCHEME: AGPMInjector
     opts:
       is_expand: false
-  - BITRISE_EXPORT_METHOD: development
+  - BITRISE_EXPORT_METHOD: none
     opts:
       is_expand: false
   - BITRISE_EXPORT_FORCE_TEAM_ID: XYZ123456
