@@ -12,6 +12,9 @@ app:
   - BITRISE_EXPORT_METHOD: development
     opts:
       is_expand: false
+  - BITRISE_EXPORT_FORCE_TEAM_ID: XYZ123456
+    opts:
+      is_expand: false
 trigger_map:
 - push_branch: '*'
   workflow: primary
@@ -56,6 +59,7 @@ workflows:
         - project_path: $BITRISE_PROJECT_PATH
         - scheme: $BITRISE_SCHEME
         - export_method: $BITRISE_EXPORT_METHOD
+        - force_team_id: $BITRISE_EXPORT_FORCE_TEAM_ID
     - script:
         inputs:
         - content: |+
