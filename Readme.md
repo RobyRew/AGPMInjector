@@ -1,4 +1,4 @@
-AGPM Injector  [![Build Status](https://app.bitrise.io/app/7da5df68f87d8ead/status.svg?token=0ZvDsUsWHjLzXz1EA_IuYQ&branch=master)](https://app.bitrise.io/app/7da5df68f87d8ead)
+AGPM Injector  [![Build Status](/Docs/AGPInjectorPreview.png)](https://github.com/RobyRew/AGPMInjector)
 =============
 ##### This is a AGPM (Apple Graphics Power Management) Injector kext generator.
 
@@ -9,6 +9,7 @@ AGPM Injector  [![Build Status](https://app.bitrise.io/app/7da5df68f87d8ead/stat
 - Click the Generate button to generate the AGPMInjector.kext. This kext will be saved in the your *Downloads* directory.
 
 #### Features
+- 6000 Series support added too.
 - Notifies user when there is an update on Github (as of App version 2.3.4).
 - Fixes GPU Power Management settings for *desktop* GPUs that are supported (SMBIOS Systems that are in the dropdown menu).
 - Automatically parses */System/Library/Extensions/AppleGraphicsPowerManagement.kext* to generate the most up to date injector kext.
