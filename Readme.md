@@ -1,6 +1,28 @@
-AGPM Injector  [![Build Status](/Docs/AGPInjectorPreview.png)](https://github.com/RobyRew/AGPMInjector)
+AGPM Injector
 =============
-##### This is a AGPM (Apple Graphics Power Management) Injector kext generator.
+
+This is a AGPM (Apple Graphics Power Management) Injector kext generator.
+
+<!-- START shields -->
+<div>
+    <!-- downloads --><a href="https://github.com/RobyRew/AGPMInjector/releases">
+        <img src="https://img.shields.io/github/downloads/RobyRew/AGPMInjector/total" alt="downloads"/>
+    </a>
+    <!-- version --><a href="https://github.com/RobyRew/AGPMInjector/releases/latest">
+        <img src="https://img.shields.io/github/release/RobyRew/AGPMInjector.svg" alt="latest version"/>
+    </a>
+     <!-- platform --><a href="https://github.com/RobyRew/AGPMInjector">
+        <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg" alt="platform"/>
+    </a>
+</div>
+</br>
+<!-- END shields -->
+
+[![Build Status](/Docs/AGPInjectorPreview.png)](https://github.com/RobyRew/AGPMInjector)
+
+><strong>Note:</strong> This is an example,there are much more options for AGPM Kext generation.
+
+
 
 #### Installation
 - Select the SMBIOS you are currently using.
@@ -9,7 +31,8 @@ AGPM Injector  [![Build Status](/Docs/AGPInjectorPreview.png)](https://github.co
 - Click the Generate button to generate the AGPMInjector.kext. This kext will be saved in the your *Downloads* directory.
 
 #### Features
-- 6000 Series support added too.
+- Nvidia from **GT 710** to **Titan XP**
+- AMD from **Duo Pro** to **W 9100**
 - Notifies user when there is an update on Github (as of App version 2.3.4).
 - Fixes GPU Power Management settings for *desktop* GPUs that are supported (SMBIOS Systems that are in the dropdown menu).
 - Automatically parses */System/Library/Extensions/AppleGraphicsPowerManagement.kext* to generate the most up to date injector kext.
@@ -25,3 +48,4 @@ AGPM Injector  [![Build Status](/Docs/AGPInjectorPreview.png)](https://github.co
 - [toleda](https://github.com/toleda) and others for layout.
 - [vidda#7908](https://discord.gg/fSSmfq) for the help with Update Notification feature.
 - [Estel#4658](https://discord.gg/fSSmfq) for the help with Encodable CodingKeys.
+- [@junzhli](https://github.com/junzhli/AGPMInjector) for version bump and AMD 6000 Support.
